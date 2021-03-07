@@ -36,6 +36,7 @@ class Student
   end
 
   def self.create(hash)
+    binding.pry
     student = Student.new(hash[name], hash[grade])
     student.save
     student
